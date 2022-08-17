@@ -1,9 +1,9 @@
-Nombre del equipo:
+Nombre del equipo: GADJET TEAM
 
 Integrante 1
 
-Nombre:
-Rol:
+Nombre:GERARD EMMANUEL GONZALEZ ZAMBRANO
+Rol: SCRUM MASTER
 
 Integrante 2
 
