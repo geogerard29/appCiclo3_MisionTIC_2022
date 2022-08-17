@@ -7,8 +7,8 @@ Rol: SCRUM MASTER
 
 Integrante 2
 
-Nombre:
-Rol:
+Nombre: DANIEL ALBERTO GONZALEZ HENRY
+Rol: PRODUCT OWNER
 
 Integrante 3
 
