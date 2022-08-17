@@ -1,0 +1,26 @@
+Nombre del equipo:
+
+Integrante 1
+
+Nombre:
+Rol:
+
+Integrante 2
+
+Nombre:
+Rol:
+
+Integrante 3
+
+Nombre:
+Rol:
+
+Integrante 4
+
+Nombre:
+Rol:
+
+Integrante 5
+
+Nombre:
+Rol:
