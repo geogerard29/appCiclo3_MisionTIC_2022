@@ -12,8 +12,8 @@ Rol: PRODUCT OWNER
 
 Integrante 3
 
-Nombre:
-Rol:
+Nombre: ADRIANA CASTILLO HEREDIA
+Rol: DESARROLLADOR
 
 Integrante 4
 
