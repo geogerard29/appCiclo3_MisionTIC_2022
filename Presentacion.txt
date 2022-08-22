@@ -22,5 +22,5 @@ Rol: ANALISTA
 
 Integrante 5
 
-Nombre:
-Rol:
+Nombre: Jonathan David Jimenez Serge
+Rol:Administrador de BD
