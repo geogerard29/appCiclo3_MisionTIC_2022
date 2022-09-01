@@ -2,59 +2,62 @@ package clasesModeladas;
 
 public class MovimientoDinero {
 
-    // Agregar los atributos de MovimientoDinero:  monto
-    String Concepto;
-    Double Monto;
-    String Usuario;
-    String TipoMov;
+    // atributos
+    int id;
+    String Concept;
+    Double Amount;
+    String User;
 
-    // Agregar metodo constructor
-   public MovimientoDinero(String Concepto, Double Monto, String Usuario, String TipoMov) {
-        this.Concepto = Concepto;
-        this.Monto = Monto;
-        this.Usuario = Usuario;
-        this.TipoMov = TipoMov;
+    // atributo typeTran (tipo de transaccion)
+
+    public enum typeTran {
+        Ingreso,
+        Egreso
     }
 
-    /*
-    Para la creacion de montos positivos y negativos,
-    una idea serìa crear un metodo que se llame ingresos (para crear montos positivos),
-    y otro que se llame Egresos (para crear montos negativos cuando el retiro exceda le valor inicial
-     */
+    typeTran tipo;
+
+    // metodo constructor
+    public MovimientoDinero(int id, String Concept, Double Amount, String User, typeTran tipo) {
+        this.id = id;
+        this.Concept = Concept;
+        this.Amount = Amount;
+        this.User = User;
+        // this.transactionType = transactionType;
+        this.tipo = tipo;
+    }
+
     
-    
-    // Agregar getters y setters
-    
-     public String getConcepto() {
-        return Concepto;
-    }
+    // getters y setters
 
-    public void setConcepto(String Concepto) {
-        this.Concepto = Concepto;
+    public int getId() {
+        return id;
     }
-
-    public Double getMonto() {
-        return Monto;
+    public void setId(int id) {
+        this.id = id;
     }
-
-    public void setMonto(Double Monto) {
-        this.Monto = Monto;
+    public String getConcept() {
+        return Concept;
     }
-
-    public String getUsuario() {
-        return Usuario;
+    public void setConcept(String Concept) {
+        this.Concept = Concept;
     }
-
-    public void setUsuario(String Usuario) {
-        this.Usuario = Usuario;
+    public Double getAmount() {
+        return Amount;
     }
-    
-        public String getTipoMov() {
-        return TipoMov;
+    public void setAmount(Double Amount) {
+        this.Amount = Amount;
     }
-
-    public void setTipoMov(String TipoMov) {
-        this.TipoMov = TipoMov;
+    public String getUser() {
+        return User;
     }
-    
+    public void setUser(String User) {
+        this.User = User;
+    }
+    public typeTran getTipo() {
+        return tipo;
+    }
+    public void setTipo(typeTran tipo) {
+        this.tipo = tipo;
+    }
 }
