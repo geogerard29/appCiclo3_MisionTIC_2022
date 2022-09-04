@@ -3,25 +3,25 @@ package com.GADJET.Sprint_3_4.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Transactions")
+@Table(name = "transactions")
 public class Transaction {
 
     //Atributos
     @Id
-    @Column(name = "Id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "Amount")
+    @Column(name = "amount")
     private double amount;
-    @Column(name = "Employee")
+    @Column(name = "employee")
     private String employee;
-    @Column(name = "Concept")
+    @Column(name = "concept")
     private String concept;
     private enum typeTran{
         Incomes,
         Expenses
     }
-    @Column(name = "Type of Transaction")
+    @Column(name = "type")
     typeTran type;
 
     //Constructor vacio

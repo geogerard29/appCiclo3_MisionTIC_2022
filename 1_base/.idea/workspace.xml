@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5183073-8ba5-42ea-a2bd-e90fc7474428" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/controllers/transactionControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/controllers/transactionControllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/controllers/enterpriseControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/controllers/enterpriseControllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/entities/Enterprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/entities/Enterprise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/entities/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/entities/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/repositories/transactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/repositories/transactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/repositories/enterpriseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/repositories/enterpriseRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +66,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Usuario/Documents/Daniel Gonzalez/Programacion/MinTic/Ciclo3/Sprint_3_y_4/1_base"
+    "last_opened_file_path": "C:/Users/hlmns/Desktop/Sprint_3_4/1_base",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RunManager">
