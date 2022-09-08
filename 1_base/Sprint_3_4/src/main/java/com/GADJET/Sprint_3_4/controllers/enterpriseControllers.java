@@ -1,40 +1,47 @@
 package com.GADJET.Sprint_3_4.controllers;
 
 import com.GADJET.Sprint_3_4.entities.Enterprise;
-import com.GADJET.Sprint_3_4.entities.Transaction;
-import com.GADJET.Sprint_3_4.repositories.enterpriseRepository;
-import com.GADJET.Sprint_3_4.repositories.transactionRepository;
+import com.GADJET.Sprint_3_4.services.enterpriseServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("enterprises")
+@RequestMapping("enterprise")
 public class enterpriseControllers {
 
     @Autowired
-    private enterpriseRepository enterpriseRepository;
-    @GetMapping()
-    //Metodo para construir todos las empresas
-    public ResponseEntity<List<Enterprise>> getEnterprise(){
-    List<Enterprise> enterprises = enterpriseRepository.findAll();
+    enterpriseServices ENT1;
 
-    return ResponseEntity.ok(enterprises);
-
+    public enterpriseControllers(enterpriseServices ENT1) {
+        this.ENT1 = ENT1;
     }
-// Metodo para listar una empresa por su identificacion
-    @RequestMapping(value = "{EnterpriseId}")
-    public ResponseEntity<Enterprise> getEnterpriseById(@PathVariable("EnterpriseId") Long EnterpriseId){
-        java.util.Optional<Enterprise> optionalEnterprise = enterpriseRepository.findById(EnterpriseId);
-        if (((java.util.Optional<Enterprise>) optionalEnterprise).isPresent()) {
-            return ResponseEntity.ok(((java.util.Optional<Enterprise>) optionalEnterprise).get());
-        }
-        else
-            return ResponseEntity.notFound().build();
+
+    @GetMapping
+    public ResponseEntity<List<Enterprise>> EnterList(){
+        return ENT1.getEnterprise();
+    }
+
+    @RequestMapping(value = "{enterpriseId}")
+    public ResponseEntity<Enterprise> E1(@PathVariable("enterpriseId") Long EnterpriseId){
+        return ENT1.getEnterpriseById(EnterpriseId);
+    }
+
+    @PostMapping
+    public ResponseEntity<Enterprise> E2(@RequestBody Enterprise ent1){
+        return ENT1.createEnterprise(ent1);
+    }
+
+    @DeleteMapping(value = "{enterpriseId}")
+    public ResponseEntity<Void> E3(@PathVariable("enterpriseId") Long enterpriseId){
+        return ENT1.deleteEnterprise(enterpriseId);
+    }
+
+    @PutMapping
+    public ResponseEntity<Enterprise> E4(@RequestBody Enterprise ent1){
+        return ENT1.updateEnterprise(ent1);
     }
 }
+ 

@@ -1,13 +1,14 @@
 package com.GADJET.Sprint_3_4.entities;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
-@Table(name = "enterprises")
+@Table(name = "enterprise")
 public class Enterprise {
     //Atributos
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private long id;
 
@@ -25,6 +26,9 @@ public class Enterprise {
 
     @Column(name = "city")
     private String city;
+
+    @OneToMany(mappedBy = "enterprise", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Employee> employee1;
 
     //Costructor vacio
     public Enterprise() {
@@ -88,4 +92,3 @@ public class Enterprise {
         this.city = city;
     }
 }
-

@@ -1,42 +1,46 @@
 package com.GADJET.Sprint_3_4.controllers;
 
 import com.GADJET.Sprint_3_4.entities.Transaction;
-import com.GADJET.Sprint_3_4.repositories.transactionRepository;
+import com.GADJET.Sprint_3_4.services.transactionServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.*;
+import java.util.List;
 
 @RestController
-@RequestMapping("transactions")
+@RequestMapping("transaction")
+
 public class transactionControllers {
 
     @Autowired
-    private transactionRepository transactionsRepository;
-    @GetMapping()
-    // Metodo para construir todos las transacciones
-    public ResponseEntity<List<Transaction>> getTransaction(){
-        List<Transaction> transactions = transactionsRepository.findAll();
-
-        return ResponseEntity.ok(transactions);
+    transactionServices TS1;
+    public transactionControllers(transactionServices TS1) {
+        this.TS1 = TS1;
     }
 
-    // Metodo para listar una transaccion por su identificacion
-    /*@RequestMapping(value = "{productId}")
-    public ResponseEntity<Transaction> getTransactionById(@PathVariable("TransactionId") Long TransactionId){
-        java.util.Optional<Transaction> optionalTransaction = transaction.findById(TransactionId);
-        if (((java.util.Optional<Transaction>) optionalTransaction).isPresent()) {
-            return ResponseEntity.ok(((java.util.Optional<Transaction>) optionalTransaction).get());
-        }
-        else
-            return ResponseEntity.notFound().build();
-    }*/
+    @GetMapping
+    public ResponseEntity<List<Transaction>> TranList(){
+        return TS1.getTransaction();
+    }
 
-    // Metodo para generar un nueva transaccion
-    /*@PostMapping
-    public ResponseEntity<Transaction> createTransaction(@RequestBody Transaction transactionn){
-        Transaction newtransactionn = transaction.save(transactionn);
-        return ResponseEntity.ok(newtransactionn);
-    }*/
+    @RequestMapping(value = "{transactionId}")
+    public ResponseEntity<Transaction> tran1(@PathVariable("transactionId") Long TransactionId){
+        return TS1.gettransactionById(TransactionId); //Ojo posible cambio
+    }
+
+    @PostMapping
+    public ResponseEntity<Transaction> tran2(@RequestBody Transaction tran){
+        return TS1.createTransaction(tran);
+    }
+
+    @DeleteMapping(value = "{transactionId}")
+    public ResponseEntity<Void> tran3(@PathVariable("transactionId") Long transactionId){
+        return TS1.deleteTransaction(transactionId);
+    }
+
+    @PutMapping
+    public ResponseEntity<Transaction> tran4(@RequestBody Transaction transaction){
+        return TS1.updateTransaction(transaction);
+    }
 }

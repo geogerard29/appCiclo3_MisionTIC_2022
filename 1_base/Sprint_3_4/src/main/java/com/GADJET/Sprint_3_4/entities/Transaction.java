@@ -3,24 +3,30 @@ package com.GADJET.Sprint_3_4.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "transactions")
+@Table(name = "transaction")
 public class Transaction {
 
     //Atributos
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(name = "amount")
+
+    @Column(name = "amount", nullable = false)
     private double amount;
-    @Column(name = "employee")
-    private String employee;
-    @Column(name = "concept")
+
+    @ManyToOne()
+    @JoinColumn(name = "employee_id")
+    private Employee employee;
+
+    @Column(name = "concept", nullable = false)
     private String concept;
+
     private enum typeTran{
         Incomes,
         Expenses
     }
+
     @Column(name = "type")
     typeTran type;
 
@@ -29,7 +35,7 @@ public class Transaction {
     }
 
     //Constructor con parametros
-    public Transaction(long id, Double amount, String employee, String concept, typeTran type) {
+    public Transaction(long id, double amount, Employee employee, String concept, typeTran type) {
         this.id = id;
         this.amount = amount;
         this.employee = employee;
@@ -38,6 +44,7 @@ public class Transaction {
     }
 
     //Getters and setters
+
     public long getId() {
         return id;
     }
@@ -46,19 +53,19 @@ public class Transaction {
         this.id = id;
     }
 
-    public Double getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(Double amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 
-    public String getEmployee() {
+    public Employee getEmployee() {
         return employee;
     }
 
-    public void setEmployee(String employee) {
+    public void setEmployee(Employee employee) {
         this.employee = employee;
     }
 
