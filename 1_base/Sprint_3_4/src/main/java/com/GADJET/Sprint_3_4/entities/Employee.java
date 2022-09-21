@@ -33,7 +33,7 @@ public class Employee {
     @Column(name = "role")
     private role roleName;
 
-    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private List<Transaction> transaction1;
 
     // Constructor vacio

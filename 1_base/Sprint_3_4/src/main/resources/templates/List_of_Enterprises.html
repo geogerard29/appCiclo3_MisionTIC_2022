@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/myStyles.css">
+    <title>List of Employees</title>
+</head>
+<body background="img/fondo_2.jpg">
+
+<style>
+
+@font-face{
+    font-family: t1;
+    src: url("font/PatuaOne-Regular.ttf");
+}
+
+tr, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    align-items: center;
+}
+
+.titulo{
+    border: 1px solid black;
+    border-collapse: collapse;
+    align-items: center;
+    background-image: url("img/fondo_3.jpg");
+    margin-top: 2px;
+    color: black;
+    font-family: t1;
+    margin-bottom: 3px;
+    padding-top: 10px;
+}
+</style>
+
+<div  class="container my-1">
+    <div data-aos="slide-right" class="titulo">
+        <h4 class="text-center">ENTERPRISES MANAGEMENT SYSTEM</h4>
+    </div>
+    <div data-aos="slide-left">
+        <table class="table table-striped table-hover table-bordered text-center table-responsive-md justify-content-center">
+            <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">NIT</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Address</th>
+                <th scope="col">City</th>
+                <th>Actions</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="enterprise : ${listenterprises}">
+                <th scope="row" th:text="${enterprise.id}"></th>
+                <td th:text="${enterprise.name}"></td>
+                <td th:text="${enterprise.nit}"></td>
+                <td th:text="${enterprise.phone}"></td>
+                <td th:text="${enterprise.address}"></td>
+                <td th:text="${enterprise.city}"></td>
+
+                <td>
+                    <a th:href="@{/updatingEnterprise/{id}(id=${enterprise.id})}" class="btn btn-success btn-sm mb-3">Update</a>
+                    <a th:href="@{/deleteEnterprise/{id}(id=${enterprise.id})}" class="btn btn-danger btn-sm mb-3">Delete</a>
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div data-aos="slide-right" class="text-center">
+        <a th:href = "@{/newEnterprise}" class="btn btn-primary btn-sm mb-3"> Add Enterprise </a>
+    </div>
+
+    <div data-aos="slide-left" class="text-center">
+        <a th:href="@{/managementSystem}" class="btn btn-secondary btn-sm mb-3">Back</a>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+		easing: 'ease-out-back',
+		duration: 1500
+		});
+</script>
+</body>
+</html>

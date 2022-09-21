@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/myStyles.css">
+    <title>Log in to System</title>
+</head>
+<body background="img/fondo_2.jpg">
+
+<style>
+
+@font-face{
+    font-family: t1;
+    src: url("font/Atma-Bold.ttf");
+}
+
+h2{
+font-family: t1;
+}
+
+.cabezerita{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+</style>
+
+<div style="visibility: hidden">
+    <h1>ESTE ES UN TITULO ESCONDIDO CON OBJETIVO DE CENTRAR VERTICALMENTE</h1>
+    <h1>ESTE ES UN TITULO ESCONDIDO CON OBJETIVO DE CENTRAR VERTICALMENTE</h1>
+</div>
+
+<div data-aos="slide-right" class="cabezerita">
+    <div class="card shadow text-center bg-light"  style="width: 18rem;">
+        <img src="img/system_2.jpg"  class="card-img-top" alt="...">
+        <div class="card-body">
+            <p></p>
+            <h2 class="card-title">MANAGEMENT SYSTEM</h2>
+            <p></p>
+            <div sec:authorize="!isAuthenticated()">
+                <a th:href="@{/oauth2/authorization/auth0}" class="btn btn-primary mb-3">Log in</a>
+            </div>
+            <div sec:authorize="isAuthenticated()">
+                <h5 th:text="'Welcome, ' + ${user.getName()}"></h5>
+                <p></p>
+                <a th:href="@{managementSystem}" class="btn btn-primary mb-3">Go to System</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+		easing: 'ease-out-back',
+		duration: 2500
+		});
+</script>
+</body>
+</html>

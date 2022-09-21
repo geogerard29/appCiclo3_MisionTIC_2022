@@ -27,7 +27,7 @@ public class Enterprise {
     @Column(name = "city")
     private String city;
 
-    @OneToMany(mappedBy = "enterprise", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "enterprise", cascade = CascadeType.ALL)
     private List<Employee> employee1;
 
     //Costructor vacio

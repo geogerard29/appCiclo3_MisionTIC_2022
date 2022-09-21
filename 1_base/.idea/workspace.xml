@@ -4,23 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5183073-8ba5-42ea-a2bd-e90fc7474428" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a5183073-8ba5-42ea-a2bd-e90fc7474428" name="Changes" comment="agregando thymeleaf para Front-END del modulo employee">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jcip_jcip_annotations_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_content_type_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_lang_tag_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_nimbus_jose_jwt_9_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_oauth2_oidc_sdk_9_35.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_oauth2_client_2_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_oauth2_client_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_oauth2_core_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_oauth2_jose_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity5_3_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/Oauth/LogoutHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/Oauth/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/frontControllers/frontEnterpriseControllers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/frontControllers/frontIndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/frontControllers/frontManagementSystemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/frontControllers/frontTransactionsControllers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/frontServices/frontEmployeeServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/frontServices/frontEnterpriseServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/frontServices/frontTransactionsServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/frontServices/frontUserServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/repositories/userRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/static/css/myStyles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/List_of_Employees.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/List_of_Enterprises.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/List_of_Transactions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/Management_System.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/New_Employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/New_Enterprise.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/New_Transaction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/Updating_Employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/Updating_Enterprise.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/Updating_Transaction.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint_3_4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/controllers/employeeControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/controllers/employeeControllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/controllers/enterpriseControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/controllers/enterpriseControllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/controllers/transactionControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/controllers/transactionControllers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/entities/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/entities/Enterprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/entities/Enterprise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/entities/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/entities/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/repositories/employeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/repositories/employeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/repositories/enterpriseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/repositories/enterpriseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/repositories/transactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/repositories/transactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/frontControllers/frontEmployeeControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/frontControllers/frontEmployeeControllers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/services/employeeServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/services/employeeServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/services/enterpriseServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/services/enterpriseServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/services/transactionServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/java/com/GADJET/Sprint_3_4/services/transactionServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/employee/indexEmployee.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint_3_4/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +64,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -56,15 +91,35 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/ASUS/Desktop/del_development/1_base",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.externalResources"
   }
 }]]></component>
   <component name="RunManager">
+    <configuration name="Sprint34Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="CLIENT_SECRET" value="2wR3-1N9oLKpkhZA67RBRcMQQioMr19v6wtJmirpNDCBQ-X56-pqWqwudDHAvpA0" />
+        <env name="POSGRES_SECRET" value="spoiltgg9" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.GADJET.Sprint_3_4.Sprint34Application" />
+      <module name="Sprint_3_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.GADJET.Sprint_3_4.Oauth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Sprint_3_4" />
       <method v="2">
@@ -78,6 +133,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Sprint34Application" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,6 +148,14 @@
       <option name="presentableId" value="Default" />
       <updated>1662131964408</updated>
     </task>
+    <task id="LOCAL-00001" summary="agregando thymeleaf para Front-END del modulo employee">
+      <created>1663117720041</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663117720041</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,5 +168,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="agregando thymeleaf para Front-END del modulo employee" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregando thymeleaf para Front-END del modulo employee" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

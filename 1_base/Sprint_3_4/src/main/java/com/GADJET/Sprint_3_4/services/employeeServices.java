@@ -31,6 +31,8 @@ public class employeeServices {
         return ResponseEntity.ok(employee2);
     }
 
+
+
     // Metodo para obtener un empleado por su id
     public ResponseEntity<Employee> getEmployeeById(@PathVariable("employeeId") Long employeeId){
         java.util.Optional<Employee> optionalEmployee = employeeRepository1.findById(employeeId);

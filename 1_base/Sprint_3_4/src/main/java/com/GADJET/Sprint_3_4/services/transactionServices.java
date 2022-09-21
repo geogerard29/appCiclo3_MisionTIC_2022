@@ -59,7 +59,7 @@ public class transactionServices {
             Transaction updateTransaction = optionaltransaction.get();
             updateTransaction.setAmount(transaction.getAmount());
             updateTransaction.setConcept(transaction.getConcept());
-            updateTransaction.setEmployee(transaction.getEmployee());
+            //updateTransaction.setEmployee(transaction.getEmployee());
             updateTransaction.setType(transaction.getType());
             transactionsRepository.save(updateTransaction);
 
