@@ -84,8 +84,8 @@ A parte del código, cada rama de los Sprints contiene una carpeta con las indic
 realización, informe y video que muestra los resultados que se fueron logrando con cada Sprint, así
 como un readme donde se describe brevemente los archivos que contiene.
 
-El código completo de la app está en la rama main. En los Sprints se realizaron las siguientes
-tareas:
+El código completo de la app está en la rama main, dentro de la carpeta Sprint_3_4. En los Sprints se 
+realizaron las siguientes tareas:
 
 #### A. Sprint 1: Equipo de trabajo y Github
 
